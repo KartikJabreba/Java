@@ -1,3 +1,5 @@
+package Linked_List;
+
 import java.util.Scanner;
 
 public class ListInput {

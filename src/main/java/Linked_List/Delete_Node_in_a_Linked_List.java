@@ -1,3 +1,5 @@
+package Linked_List;
+
 public  class Delete_Node_in_a_Linked_List {
     public static class ListNode{
         int data;

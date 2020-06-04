@@ -1,3 +1,5 @@
+package Linked_List;
+
 public class Linklist {
     static class Node{
         int data;
