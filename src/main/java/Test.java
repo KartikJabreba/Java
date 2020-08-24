@@ -1,16 +1,19 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
-
-import java.io.PrintWriter;
-import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Test {
-    public static void main(String[] args) {
-        int a=10;
-        int b=a;
-        int c=a;
-        System.out.println(b+"   "+c);
+    public static boolean toCity(String[] cities, String city) {
+        ArrayList<String> arrayList = new ArrayList<>();
+        for (int i = 0; i < cities.length; i++) {
+            arrayList.add(cities[i]);
 
+        }
+        if (arrayList.contains(city)) return true;
+        return false;
+    }
+
+    public static void main(String[] args) {
+        String[] cities = {"A", "B", "C", "D"};
+        if (toCity(cities, "e")) System.out.println("true");
+        else System.exit(123);
     }
 }
